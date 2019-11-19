@@ -1,12 +1,4 @@
-﻿  Game.cpp
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,44): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,44): warning C4244:         with
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,44): warning C4244:         [
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,44): warning C4244:             T=float
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,44): warning C4244:         ]
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,35): warning C4244:  'argument': conversion from 'int' to 'T', possible loss of data
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,35): warning C4244:         with
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,35): warning C4244:         [
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,35): warning C4244:             T=float
-C:\Users\Robin Meyler\Desktop\SFMLTemplate\SFMLTemplate\Game.cpp(18,35): warning C4244:         ]
-  SFMLTemplate.vcxproj -> C:\Users\Robin Meyler\Desktop\SFMLTemplate\Debug\SFMLTemplate.exe
+﻿  Tile.cpp
+C:\Users\Robin Meyler\Desktop\New folder\oop\SFMLTemplate\SFMLTemplate\Tile.cpp(14,13): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Robin Meyler\Desktop\New folder\oop\SFMLTemplate\SFMLTemplate\Tile.cpp(15,20): warning C4018:  '<': signed/unsigned mismatch
+  SFMLTemplate.vcxproj -> C:\Users\Robin Meyler\Desktop\New folder\oop\SFMLTemplate\Debug\SFMLTemplate.exe

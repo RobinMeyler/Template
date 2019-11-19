@@ -30,27 +30,34 @@ Game::Game() :
 		    index++;
 		}
 	}
-	// Boys
+
+	t[4][5].isWall = true;
+	t[4][5].m_box.setFillColor(sf::Color::Black);
+	t[5][5].isWall = true;
+	t[5][5].m_box.setFillColor(sf::Color::Black);
+	// the Boys
 	for (int i = 0; i < size; i++)
 	{
 		for (int j = 0; j < size; j++)
 		{
-			if (i > 0)
-			{
-				t[i][j].m_neighbours.push_back(&t[i - 1][j]);
-			}
-			if (i < 51)
-			{
-				t[i][j].m_neighbours.push_back(&t[i + 1][j]);
-			}
-			if (j > 0)
-			{
-				t[i][j].m_neighbours.push_back(&t[i][j - 1]);
-			}
-			if (j < 51)
-			{
-				t[i][j].m_neighbours.push_back(&t[i][j + 1]);
-			}
+			
+				if (i < 9)
+				{
+					t[i][j].m_neighbours.push_back(&t[i + 1][j]);
+				}
+				if (j > 0)
+				{
+					t[i][j].m_neighbours.push_back(&t[i][j - 1]);
+				}
+				if (j < 9)
+				{
+					t[i][j].m_neighbours.push_back(&t[i][j + 1]);
+				}
+				if (i > 0)
+				{
+					t[i][j].m_neighbours.push_back(&t[i - 1][j]);
+				}
+			
 		}
 	}
 
@@ -133,12 +140,18 @@ void Game::update(sf::Time t_deltaTime)
 			{
 				if ((sf::Vector2i)t[i][j].m_pos == oop)
 				{
-					t[i][j].getNeigh();
+					t[i][j].getNeigh(0.1);
 				}
 			}
 
 		}
-
+		for (int i = 0; i < size; i++)
+		{
+			for (int j = 0; j < size; j++)
+			{
+				t[i][j].update(t_deltaTime);
+			}
+		}
 	}
 }
 
